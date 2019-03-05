@@ -5,9 +5,7 @@ if (!pokemon) return null;
   return(
       <dl>
           <dt>Name</dt>
-          <dd>{pokemon.result.name}</dd>
-
-
+          <dd>{pokemon.name}</dd>
       </dl>
   );
 }

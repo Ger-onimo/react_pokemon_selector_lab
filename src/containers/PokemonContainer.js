@@ -30,7 +30,7 @@ handlePokemonSelected(index){
           <div>
             <h2>Pokemon Container</h2>
             <PokemonSelector pokemons={this.state.pokemons} onPokemonSelected={this.handlePokemonSelected}/>
-            <PokemonDetail/>
+            <PokemonDetail pokemon={this.state.currentPokemon}/>
           </div>
         )
     }
