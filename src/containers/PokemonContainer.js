@@ -24,9 +24,9 @@ componentDidMount() {
     render(){
         return (
           <div>
-              <h2>Pokemon Container</h2>
-
-
+            <h2>Pokemon Container</h2>
+            <PokemonSelector pokemons={this.state.pokemons}/>
+            <PokemonDetail/>
           </div>
         )
     }
