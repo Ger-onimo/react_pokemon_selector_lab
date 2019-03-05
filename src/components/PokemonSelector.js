@@ -10,7 +10,6 @@ const PokemonSelector = (props) => {
         props.onPokemonSelected(event.target.value);
     }
 
-
     return(
         <select id="pokemon-selector" onChange={handleChange} defaultValue="default">
           <option disabled value="default">Choose a Pokemon...</option>

@@ -1,5 +1,7 @@
 import React from "react";
 import PokemonSelector from "../components/PokemonSelector";
+import PokemonDetail from "../components/PokemonDetail";
+
 
 class PokemonContainer extends React.Component {
   constructor(props){
@@ -27,8 +29,8 @@ handlePokemonSelected(index){
         return (
           <div>
             <h2>Pokemon Container</h2>
-            <PokemonSelector pokemons={this.state.pokemons}/>
-            {/* <PokemonDetail/> */}
+            <PokemonSelector pokemons={this.state.pokemons} onPokemonSelected={this.handlePokemonSelected}/>
+            <PokemonDetail/>
           </div>
         )
     }
